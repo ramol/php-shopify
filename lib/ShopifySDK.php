@@ -69,6 +69,7 @@ use PHPShopify\Exception\SdkException;
 /**
  * @property-read AbandonedCheckout $AbandonedCheckout
  * @property-read ApplicationCharge $ApplicationCharge
+ * @property-read AssignedFulfillmentOrder $AssignedFulfillmentOrder
  * @property-read Blog $Blog
  * @property-read CarrierService $CarrierService
  * @property-read Cart $Cart
@@ -167,6 +168,7 @@ class ShopifySDK
     protected $resources = array(
         'AbandonedCheckout',
         'ApplicationCharge',
+        'AssignedFulfillmentOrder',
         'Blog',
         'CarrierService',
         'Cart',
