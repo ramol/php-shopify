@@ -14,7 +14,9 @@ namespace PHPShopify;
  * --------------------------------------------------------------------------
  * FulfillmentOrder -> Child Resources
  * --------------------------------------------------------------------------
+ * @property-read FulfillmentRequest $FulfillmentRequest
  *
+ * @method FulfillmentRequest FulfillmentRequest(integer $id = null)
  * --------------------------------------------------------------------------
  * Fulfillment -> Custom actions
  * --------------------------------------------------------------------------
@@ -32,6 +34,9 @@ class FulfillmentOrder extends ShopifyResource
      */
     protected $resourceKey = 'fulfillment_order';
 
+    protected $childResource = array (
+        'FulfillmentRequest',
+    );
 
     /**
      * @inheritDoc
