@@ -68,6 +68,7 @@ use PHPShopify\Exception\SdkException;
 
 /**
  * @property-read AbandonedCheckout $AbandonedCheckout
+ * @property-read AccessScope $AccessScope
  * @property-read ApplicationCharge $ApplicationCharge
  * @property-read AssignedFulfillmentOrder $AssignedFulfillmentOrder
  * @property-read Blog $Blog
@@ -116,6 +117,7 @@ use PHPShopify\Exception\SdkException;
  * @property-read GraphQL $GraphQL
  *
  * @method AbandonedCheckout AbandonedCheckout(integer $id = null)
+ * @method AccessScope AccessScope()
  * @method ApplicationCharge ApplicationCharge(integer $id = null)
  * @method Blog Blog(integer $id = null)
  * @method CarrierService CarrierService(integer $id = null)
@@ -134,6 +136,7 @@ use PHPShopify\Exception\SdkException;
  * @method Event Event(integer $id = null)
  * @method FulfillmentOrder FulfillmentOrder(integer $id = null)
  * @method FulfillmentService FulfillmentService(integer $id = null)
+ * @method FulfillmentOrder FulfillmentOrder(integer $id = null)
  * @method GiftCard GiftCard(integer $id = null)
  * @method InventoryItem InventoryItem(integer $id = null)
  * @method InventoryLevel InventoryLevel(integer $id = null)
@@ -170,6 +173,7 @@ class ShopifySDK
      */
     protected $resources = array(
         'AbandonedCheckout',
+        'AccessScope',
         'ApplicationCharge',
         'AssignedFulfillmentOrder',
         'Blog',
@@ -190,6 +194,7 @@ class ShopifySDK
         'Fulfillment',
         'FulfillmentOrder',
         'FulfillmentService',
+        'FulfillmentOrder',
         'GiftCard',
         'InventoryItem',
         'InventoryLevel',
@@ -231,7 +236,7 @@ class ShopifySDK
     /**
      * @var string Default Shopify API version
      */
-    public static $defaultApiVersion = '2021-01';
+    public static $defaultApiVersion = '2021-10';
 
     /**
      * Shop / API configurations
